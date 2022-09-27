@@ -15,6 +15,8 @@ let validacionNombre = () => {
     do {
         var nombre = document.querySelector(".nombre");
         var expRegNombre=/^[a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s]+$/;
+        var expRegMail = /[A-Z0-9._%+-]+@[A-Z0-9-]+.[A-Z]/;
+
         
         if(nombre.match(expRegNombre)) {
             alert('Nombre ingresado correctamente.');

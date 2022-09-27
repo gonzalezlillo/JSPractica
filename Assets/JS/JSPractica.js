@@ -1,5 +1,9 @@
+const expRegCorreo =/^\w+@(\w+\.)+\w{2,4}$/;
+const expRegNombre=/^[a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s]+$/;
+
 var formulario = document.getElementById("formulario");
 formulario.addEventListener('submit',enviar);
+
 
 function enviar(){
     
@@ -12,19 +16,20 @@ function enviar(){
 
 
 let validacionNombre = () => {
-    do {
-        var nombre = document.querySelector(".nombre");
-        var expRegNombre=/^[a-zA-ZÑñÁáÉéÍíÓóÚúÜü\s]+$/;
-        var expRegMail = /[A-Z0-9._%+-]+@[A-Z0-9-]+.[A-Z]/;
+    var nombre = document.getElementById("nombre");
+    
+    if(!nombre.value)
+     {
+      alert("El campo nombre es requerido");
+      nombre.focus();
+      return false;
+     }
+     if (!expRegNombre.exec(nombre.value))
+     {
+        alert("El campo nombre solo admite letras y espacios.")
+        nombre.focus();
+        return false;
+     }
 
-        
-        if(nombre.match(expRegNombre)) {
-            alert('Nombre ingresado correctamente.');
-        }
-        else {
-            alert('Nombre invalido.');      
-        }
-
-    }while (!nombre.match(expRegNombre));
     return nombre; 
 }

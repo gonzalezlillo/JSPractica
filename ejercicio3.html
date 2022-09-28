@@ -42,15 +42,15 @@
     var resultado = document.getElementById("resultado");
 
 
-    function restar(){
+    let restar = () => {
     var resta =  parseInt(valor1.value) - parseInt(valor2.value);
     if(resta<0) resta = 0;
     resultado.innerText = resta;
     };
 
-    function sumar(){
+    let sumar = () => {
     var suma =  parseInt(valor1.value) + parseInt(valor2.value);
-    if(resta<0) suma = 0;
+    if(suma<0) suma = 0;
     resultado.innerText = suma;
     };
     </script>

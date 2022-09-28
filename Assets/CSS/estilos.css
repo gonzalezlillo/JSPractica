@@ -1,0 +1,16 @@
+label {
+    margin-top: 1.5em;
+}
+
+.error_message {
+    color:red;
+    font-size: 80%;
+    font-style: italic;
+
+}
+
+.resultado {
+    color:green;
+    font-size: 80%;
+    font-style: italic;
+}

@@ -1,35 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <link rel="stylesheet" href="./Assets/CSS/estilos.css">
+    <title>Desafío: Práctica JS</title>
+</head> 
 <body>
-    <form id="formulario_contacto" action="#" name="formulario" >
+    <h2>¡Escríbenos!</h2>
+    <form id="formulario">
         
         <div class="row">
-            <label class="required" for="nombre">Nombre completo:</label><br />
-            <input id="nombre" class="input" name="nombre" type="text" value="" size="30" /><br />
+            <label  for="nombre">Nombre completo:</label><br>
+            <input id="nombre"  name="nombre" type="text" value="" size="30" /><br>
             <span id="validacion_nombre" class="error_message"></span>
         </div>
 
         <div class="row">
-            <label class="required" for="email">Tu correo:</label><br />
-            <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+            <label for="email">Tu correo:</label><br>
+            <input id="email"  name="email" type="mail" value="" size="30" /><br>
             <span id="validacion_correo" class="error_message"></span>
         </div>
 
         <div class="row">
-            <label class="required" for="asunto">Asunto:</label><br />
-            <textarea id="asunto" class="input" name="asunto" rows="7" cols="30"></textarea><br />
+            <label for="asunto">Asunto:</label><br>
+            <input id="asunto"  name="asunto" type="text" value="" size="30"><br>
             <span id="validacion_asunto" class="error_message"></span>
         </div>
 
         <div class="row">
-            <label class="required" for="mensaje">Mensaje:</label><br />
-            <textarea id="mensaje" class="input" name="mensaje" rows="7" cols="30"></textarea><br />
+            <label  for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje"  name="mensaje" rows="7" cols="40"></textarea><br>
             <span id="validacion_mensaje" class="error_message"></span>
         </div>
     
@@ -37,11 +39,11 @@
 
     </form>
 
-    <div>
-        <p class="resultado"></p>
-    </div>
+    <p id="resultado" class="resultado"></p>
+
 
     <script src="./Assets/JS/JSPractica.js"></script>
+
 </body>
 
 </html>

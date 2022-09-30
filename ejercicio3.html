@@ -10,10 +10,9 @@
     <div>
         <div>
             <h2>
-                Resultado:
+                Resultado: <span class="resultado"></span>
             </h2>
-                <p id="resultado"></p>
-            
+                          
             <div>
                 <div>
                     <div>
@@ -39,7 +38,7 @@
     <script>
     var valor1 = document.getElementById("valor1");
     var valor2 = document.getElementById("valor2");
-    var resultado = document.getElementById("resultado");
+    var resultado = document.querySelector(".resultado");
 
 
     let restar = () => {

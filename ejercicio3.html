@@ -36,22 +36,33 @@
         </div>
     </div>
     <script>
-    var valor1 = document.getElementById("valor1");
-    var valor2 = document.getElementById("valor2");
-    var resultado = document.querySelector(".resultado");
+        const valor1 = document.getElementById("valor1");
+        const valor2 = document.getElementById("valor2");
+        const resultado = document.querySelector(".resultado");
 
+        let validar = () => {
+            if (parseFloat(valor1.value) == 1*valor1.value && parseFloat(valor2.value) == 1*valor2.value) {
+                return true;
+            } else {
+                resultado.innerText = 'Solo debes ingresar números';
+                return false;
+            }
+        }
 
-    let restar = () => {
-    var resta =  parseInt(valor1.value) - parseInt(valor2.value);
-    if(resta<0) resta = 0;
-    resultado.innerText = resta;
-    };
+        let restar = () => {
+            if (validar()) {
+                let resta =  parseFloat(valor1.value) - parseFloat(valor2.value);
+                if(resta<0) resta = 0;
+                resultado.innerText = resta;
+            }
+        }
 
-    let sumar = () => {
-    var suma =  parseInt(valor1.value) + parseInt(valor2.value);
-    if(suma<0) suma = 0;
-    resultado.innerText = suma;
-    };
+        let sumar = () => {
+            if (validar()) {
+                let suma =  parseFloat(valor1.value) + parseFloat(valor2.value);
+                resultado.innerText = suma;
+            } 
+        }
     </script>
 </body>
 

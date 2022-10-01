@@ -3,6 +3,8 @@
 ### Fullstack Java Bootcamp - Infoclub
 #### September, 2022
 
-Collaborators: @github/PauxSy @QukiQ @gonzalezlillo
+Collaborators: @PauxSy @QukiQ @gonzalezlillo
+
 Professor: @Kessillox
+
 Assistant: @cr1stian111
